@@ -136,6 +136,8 @@ namespace PrezzoEquilibrio
                 lblEquilibrio.Text = "EQUILIBRIO NON TROVATO\nnel range considerato";
                 lblEquilibrio.ForeColor = System.Drawing.Color.Red;  
             }
+
+            AggiornaTabella();
         }
 
         private void numDomandaIntercetta_ValueChanged(object sender, EventArgs e)
@@ -181,7 +183,7 @@ namespace PrezzoEquilibrio
                                                offertaIntercetta, offertaCoeff, offertaEsponente);
 
                 
-                for (double q = 0; q <= 8; q += 0.5)
+                for (double q = 0; q <= 20; q += 0.5)
                 {
                     double domanda = domandaIntercetta - domandaCoeff * q;
                     double offerta = offertaIntercetta + offertaCoeff * Math.Pow(q, offertaEsponente);
