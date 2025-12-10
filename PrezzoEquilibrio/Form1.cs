@@ -108,9 +108,9 @@ namespace PrezzoEquilibrio
                     new double[] { equilibrio.Prezzo }
                 );
                 puntoEq.Label = $"Equilibrio (q={equilibrio.Quantita:F2}, p={equilibrio.Prezzo:F2})";
-                puntoEq.Color = Colors.Green;  
+                puntoEq.Color = Colors.Black;  
                 puntoEq.MarkerSize = 10;
-                puntoEq.MarkerShape = MarkerShape.FilledCircle;
+                puntoEq.MarkerShape = MarkerShape.FilledDiamond;
                 puntoEq.LineWidth = 0;  
 
             
