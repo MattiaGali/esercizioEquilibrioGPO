@@ -228,5 +228,7 @@ namespace PrezzoEquilibrio
                 MessageBox.Show($"Errore nel reset: {ex.Message}", "Errore");
             }
         }
+
+        
     }
 }

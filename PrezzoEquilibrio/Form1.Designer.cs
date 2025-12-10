@@ -67,7 +67,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.BackColor = System.Drawing.Color.Wheat;
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.dataGridView);
             this.panel1.Controls.Add(this.button_reset);
@@ -95,7 +95,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(20, 394);
+            this.label9.Location = new System.Drawing.Point(18, 414);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 19);
             this.label9.TabIndex = 16;
@@ -104,26 +104,29 @@
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(16, 413);
+            this.dataGridView.Location = new System.Drawing.Point(17, 446);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(240, 150);
             this.dataGridView.TabIndex = 15;
             // 
             // button_reset
             // 
-            this.button_reset.Location = new System.Drawing.Point(23, 602);
+            this.button_reset.BackColor = System.Drawing.Color.OldLace;
+            this.button_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_reset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button_reset.Location = new System.Drawing.Point(65, 615);
             this.button_reset.Name = "button_reset";
-            this.button_reset.Size = new System.Drawing.Size(150, 30);
+            this.button_reset.Size = new System.Drawing.Size(164, 34);
             this.button_reset.TabIndex = 14;
-            this.button_reset.Text = "Reset Valori Originali";
-            this.button_reset.UseVisualStyleBackColor = true;
+            this.button_reset.Text = "Torna ai valori iniziali";
+            this.button_reset.UseVisualStyleBackColor = false;
             this.button_reset.Click += new System.EventHandler(this.button_reset_Click);
             // 
             // lblEquilibrio
             // 
             this.lblEquilibrio.AutoSize = true;
             this.lblEquilibrio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblEquilibrio.Location = new System.Drawing.Point(20, 295);
+            this.lblEquilibrio.Location = new System.Drawing.Point(18, 350);
             this.lblEquilibrio.Name = "lblEquilibrio";
             this.lblEquilibrio.Size = new System.Drawing.Size(191, 21);
             this.lblEquilibrio.TabIndex = 13;
@@ -131,7 +134,7 @@
             // 
             // numOffertaEsponente
             // 
-            this.numOffertaEsponente.Location = new System.Drawing.Point(131, 260);
+            this.numOffertaEsponente.Location = new System.Drawing.Point(29, 317);
             this.numOffertaEsponente.Maximum = new decimal(new int[] {
             5,
             0,
@@ -156,7 +159,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(24, 260);
+            this.label8.Location = new System.Drawing.Point(25, 295);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(103, 19);
             this.label8.TabIndex = 11;
@@ -170,7 +173,7 @@
             0,
             0,
             196608});
-            this.numOffertaCoeff.Location = new System.Drawing.Point(131, 230);
+            this.numOffertaCoeff.Location = new System.Drawing.Point(29, 261);
             this.numOffertaCoeff.Maximum = new decimal(new int[] {
             1,
             0,
@@ -195,7 +198,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(13, 230);
+            this.label7.Location = new System.Drawing.Point(24, 239);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(116, 19);
             this.label7.TabIndex = 9;
@@ -204,7 +207,7 @@
             // numOffertaIntercetta
             // 
             this.numOffertaIntercetta.DecimalPlaces = 2;
-            this.numOffertaIntercetta.Location = new System.Drawing.Point(131, 200);
+            this.numOffertaIntercetta.Location = new System.Drawing.Point(29, 211);
             this.numOffertaIntercetta.Maximum = new decimal(new int[] {
             50,
             0,
@@ -224,7 +227,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 200);
+            this.label6.Location = new System.Drawing.Point(25, 189);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 19);
             this.label6.TabIndex = 7;
@@ -234,7 +237,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(20, 170);
+            this.label5.Location = new System.Drawing.Point(25, 170);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(167, 19);
             this.label5.TabIndex = 6;
@@ -248,7 +251,7 @@
             0,
             0,
             65536});
-            this.numDomandaCoeff.Location = new System.Drawing.Point(131, 120);
+            this.numDomandaCoeff.Location = new System.Drawing.Point(28, 132);
             this.numDomandaCoeff.Maximum = new decimal(new int[] {
             1,
             0,
@@ -273,7 +276,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 120);
+            this.label4.Location = new System.Drawing.Point(24, 110);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 19);
             this.label4.TabIndex = 4;
@@ -282,7 +285,7 @@
             // numDomandaIntercetta
             // 
             this.numDomandaIntercetta.DecimalPlaces = 2;
-            this.numDomandaIntercetta.Location = new System.Drawing.Point(131, 90);
+            this.numDomandaIntercetta.Location = new System.Drawing.Point(28, 78);
             this.numDomandaIntercetta.Maximum = new decimal(new int[] {
             200,
             0,
@@ -302,7 +305,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 90);
+            this.label3.Location = new System.Drawing.Point(24, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 19);
             this.label3.TabIndex = 2;
@@ -312,7 +315,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 60);
+            this.label2.Location = new System.Drawing.Point(20, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 19);
             this.label2.TabIndex = 1;
@@ -322,7 +325,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 20);
+            this.label1.Location = new System.Drawing.Point(19, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 19);
             this.label1.TabIndex = 0;
