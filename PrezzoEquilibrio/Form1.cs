@@ -25,15 +25,6 @@ namespace PrezzoEquilibrio
             dataGridView.Columns.Add("Offerta", "Offerta (o)");
             dataGridView.Columns.Add("Differenza", "Differenza");
 
-            this.BackColor = Color.LightYellow;
-
-            // Aggiungi un titolo in alto
-            var lblTitolo = new System.Windows.Forms.Label();
-            lblTitolo.Text = "Analisi Prezzo di Equilibrio";
-            lblTitolo.ForeColor = Color.DarkBlue;
-            lblTitolo.AutoSize = true;
-            lblTitolo.Location = new Point(10, 10);
-            this.Controls.Add(lblTitolo);
             AggiornaGrafico();
             AggiornaTabella();
         }
@@ -117,12 +108,12 @@ namespace PrezzoEquilibrio
                 var lineaVerticale = formsPlot.Plot.Add.VerticalLine(equilibrio.Quantita);
                 lineaVerticale.Color = Colors.Green;
                 lineaVerticale.LineWidth = 1;
-                lineaVerticale.LinePattern = LinePattern.Dashed;  
+                lineaVerticale.LinePattern = LinePattern.DenselyDashed;  
 
                 var lineaOrizzontale = formsPlot.Plot.Add.HorizontalLine(equilibrio.Prezzo);
                 lineaOrizzontale.Color = Colors.Green;
                 lineaOrizzontale.LineWidth = 1;
-                lineaOrizzontale.LinePattern = LinePattern.Dashed; 
+                lineaOrizzontale.LinePattern = LinePattern.DenselyDashed; 
             }
 
           
@@ -137,7 +128,7 @@ namespace PrezzoEquilibrio
                 lblEquilibrio.Text = $"EQUILIBRIO TROVATO:\n" +
                                    $"Quantità: {equilibrio.Quantita:F2}\n" +
                                    $"Prezzo: {equilibrio.Prezzo:F2}";
-                lblEquilibrio.ForeColor = System.Drawing.Color.DarkGreen;  
+                lblEquilibrio.ForeColor = System.Drawing.Color.ForestGreen;  
             }
             else
             {
@@ -223,7 +214,7 @@ namespace PrezzoEquilibrio
             {
                 
                 numDomandaIntercetta.Value = 90;
-                numDomandaCoeff.Value = 4;
+                numDomandaCoeff.Value = -4;
                 numOffertaIntercetta.Value = 10;
                 numOffertaCoeff.Value = 0.01m;
                 numOffertaEsponente.Value = 3;
