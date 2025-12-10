@@ -95,7 +95,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(18, 414);
+            this.label9.Location = new System.Drawing.Point(13, 424);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 19);
             this.label9.TabIndex = 16;
@@ -114,9 +114,9 @@
             this.button_reset.BackColor = System.Drawing.Color.OldLace;
             this.button_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_reset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button_reset.Location = new System.Drawing.Point(65, 615);
+            this.button_reset.Location = new System.Drawing.Point(65, 602);
             this.button_reset.Name = "button_reset";
-            this.button_reset.Size = new System.Drawing.Size(164, 34);
+            this.button_reset.Size = new System.Drawing.Size(164, 47);
             this.button_reset.TabIndex = 14;
             this.button_reset.Text = "Torna ai valori iniziali";
             this.button_reset.UseVisualStyleBackColor = false;
