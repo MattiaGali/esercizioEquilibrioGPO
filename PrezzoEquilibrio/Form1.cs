@@ -25,6 +25,7 @@ namespace PrezzoEquilibrio
             dataGridView.Columns.Add("Offerta", "Offerta (o)");
             dataGridView.Columns.Add("Differenza", "Differenza");
 
+
             AggiornaGrafico();
             AggiornaTabella();
         }
@@ -35,13 +36,13 @@ namespace PrezzoEquilibrio
         }
 
 
-        private (bool Trovato, double Quantita, double Prezzo) TrovaEquilibrio( double dInt, double dCoeff, double oInt, double oCoeff, double oExp)
+        private (bool Trovato, double Quantita, double Prezzo) TrovaEquilibrio( double dInt, double dCoeff, double oInt, double oCoeff, double oEsp)
         {
            
             for (double q = 0; q <= 20; q += 0.001)
             {
                 double domanda = dInt + dCoeff * q;
-                double offerta = oInt + oCoeff * Math.Pow(q, oExp);
+                double offerta = oInt + oCoeff * Math.Pow(q, oEsp);
 
                
                 if (Math.Abs(domanda - offerta) < 0.5)
